@@ -4,6 +4,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Urls(
-    val regular: String
+data class SearchResult(
+    @SerialName("results")
+    val images: List<UnsplashImage>,
 )
